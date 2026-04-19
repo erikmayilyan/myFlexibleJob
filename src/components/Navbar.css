@@ -1,0 +1,87 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  backdrop-filter: blur(24px);
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+.nice-navbar {
+  color: #3d3f43;
+  display: flex;
+  gap: 1.25rem;
+  transition: all 0.3s ease;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.nice-navbar a {
+  color: #3d3f43;
+  text-decoration: none;
+  font-size: 120%;
+}
+
+.login a {
+  text-decoration: none;
+  background-color: #000000;
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .navbar {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  } 
+
+  .nav-tabs:hover {
+    border-bottom: 1px solid #000000;
+  }
+
+  .nice-navbar {
+    font-size: 0.875rem;
+    align-items: center;
+  }
+}
+
+@media (max-width: 639px) {
+  .nice-navbar {
+    width: 15rem;
+    padding-left: 2.5rem;
+    position: fixed;
+    min-height: 100vh;
+    height: 100%;
+    flex-direction: column;
+    background-color: #000000;
+    color: white;
+    padding-top: 5rem;
+  }
+
+  .nice-navbar a {
+    color: white;
+    padding-bottom: 20px;
+  }
+}
