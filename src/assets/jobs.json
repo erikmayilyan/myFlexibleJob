@@ -1,0 +1,74 @@
+{
+  "jobs": [
+    {
+      "company_name": "Foyer Group",
+      "position_name": "Student Job (Holiday Worker)",
+      "opening_date": "2026-05-01",
+      "closing_date": "2026-06-15",
+      "description": "Short-term student job during school holidays. Tasks may include administrative support, customer service, or assisting internal teams. Open to students aged 17–26 for 2–4 weeks."
+    },
+    {
+      "company_name": "Amazon Media EU S.à r.l.",
+      "position_name": "Marketing Intern",
+      "opening_date": "2026-01-10",
+      "closing_date": "2026-04-30",
+      "description": "Internship for students graduating in 2027. Work with the Product & Growth team on marketing campaigns, analytics, and brand positioning."
+    },
+    {
+      "company_name": "Goldman Sachs",
+      "position_name": "Operations Intern (Off-Cycle)",
+      "opening_date": "2026-02-01",
+      "closing_date": "2026-05-31",
+      "description": "Off-cycle internship program for undergraduate students. Involves supporting operations, financial processes, and product lifecycle activities."
+    },
+    {
+      "company_name": "Red Bull",
+      "position_name": "Student Marketeer",
+      "opening_date": "2026-03-01",
+      "closing_date": "2026-06-01",
+      "description": "Campus-based brand ambassador role. Promote products, organize events, and engage with student communities."
+    },
+    {
+      "company_name": "DLA Piper",
+      "position_name": "Legal Intern",
+      "opening_date": "2026-02-15",
+      "closing_date": "2026-06-30",
+      "description": "6-month internship (July–December). Assist legal teams with research, documentation, and case preparation."
+    },
+    {
+      "company_name": "UBS",
+      "position_name": "Business Acceptance Intern",
+      "opening_date": "2026-01-20",
+      "closing_date": "2026-04-15",
+      "description": "Internship for students in law, compliance, or finance. Work on risk analysis, onboarding processes, and internal compliance checks."
+    },
+    {
+      "company_name": "Advanzia Bank",
+      "position_name": "Digital Marketing Trainee",
+      "opening_date": "2026-03-10",
+      "closing_date": "2026-06-10",
+      "description": "Support digital campaigns, content creation, and product marketing. Requires student work authorization in Luxembourg."
+    },
+    {
+      "company_name": "Lux-Airport",
+      "position_name": "Student Job – InfoDesk Support",
+      "opening_date": "2026-04-01",
+      "closing_date": "2026-05-15",
+      "description": "Assist passengers at the airport information desk. Provide guidance, answer queries, and support daily operations."
+    },
+    {
+      "company_name": "Paperjam",
+      "position_name": "Event Programming Assistant Intern",
+      "opening_date": "2026-03-01",
+      "closing_date": "2026-05-30",
+      "description": "6-month internship supporting event planning, coordination, and execution for business events in Luxembourg."
+    },
+    {
+      "company_name": "FANUC Europe Corporation",
+      "position_name": "Working Student – HR & Change Management",
+      "opening_date": "2026-02-10",
+      "closing_date": "2026-05-20",
+      "description": "Collaborate with HR teams on organizational initiatives, cross-functional projects, and internal communication strategies."
+    }
+  ]
+}

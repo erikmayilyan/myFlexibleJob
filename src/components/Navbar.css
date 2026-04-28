@@ -9,15 +9,32 @@
   position: sticky;
   top: 0;
   z-index: 20;
-  backdrop-filter: blur(24px);
   font-weight: 500;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #ffffff;
 }
 
 .navbar img {
   height: 60px;
   width: auto;
   object-fit: contain;
+}
+
+.menu-toggle,
+.close-menu {
+  border: none;
+  background: transparent;
+  color: #000000;
+  cursor: pointer;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.close-menu {
+  display: none;
 }
 
 .nice-navbar {
@@ -44,6 +61,10 @@
   border-radius: 15px;
 }
 
+.mobile-login {
+  display: none;
+}
+
 @media (min-width: 1024px) {
   .navbar {
     padding-left: 6rem;
@@ -68,7 +89,17 @@
 }
 
 @media (max-width: 639px) {
+  .login {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+    z-index: 31;
+  }
+
   .nice-navbar {
+    display: none;
     width: 15rem;
     padding-left: 2.5rem;
     position: fixed;
@@ -78,10 +109,33 @@
     background-color: #000000;
     color: white;
     padding-top: 5rem;
+    z-index: 30;
   }
 
   .nice-navbar a {
     color: white;
     padding-bottom: 20px;
+  }
+
+  .mobile-login {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 10px 16px;
+    border: 1px solid white;
+    border-radius: 15px;
+  }
+
+  .nice-navbar.open {
+    display: flex;
+  }
+
+  .close-menu {
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    color: white;
   }
 }
