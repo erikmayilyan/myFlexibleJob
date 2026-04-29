@@ -1,74 +1,214 @@
 {
   "jobs": [
     {
+      "id": 1,
       "company_name": "Foyer Group",
       "position_name": "Student Job (Holiday Worker)",
+      "image": "/images/foyer.png",
       "opening_date": "2026-05-01",
       "closing_date": "2026-06-15",
-      "description": "Short-term student job during school holidays. Tasks may include administrative support, customer service, or assisting internal teams. Open to students aged 17–26 for 2–4 weeks."
+      "description": "Join Foyer Group as a holiday worker and gain hands-on experience in a dynamic corporate environment. You will support administrative teams with data entry, document preparation, and internal coordination. Responsibilities may include assisting with customer service inquiries, organizing files, and supporting ongoing projects. This role is ideal for students looking to gain professional exposure during school holidays. Candidates should be detail-oriented, reliable, and eager to learn. Basic knowledge of office tools such as Microsoft Office is beneficial. You will work in a collaborative environment and gain insight into business operations.",
+      "responsibilities": [
+        "Assist administrative teams with daily tasks",
+        "Support customer service inquiries",
+        "Organize and maintain internal documents",
+        "Help coordinate internal processes"
+      ],
+      "requirements": [
+        "Student aged 17–26",
+        "Basic Microsoft Office knowledge",
+        "Attention to detail",
+        "Motivated and reliable"
+      ]
     },
     {
+      "id": 2,
       "company_name": "Amazon Media EU S.à r.l.",
       "position_name": "Marketing Intern",
+      "image": "/images/amazon.png",
       "opening_date": "2026-01-10",
       "closing_date": "2026-04-30",
-      "description": "Internship for students graduating in 2027. Work with the Product & Growth team on marketing campaigns, analytics, and brand positioning."
+      "description": "As a Marketing Intern at Amazon, you will support the Product & Growth team in executing marketing campaigns across European markets. Responsibilities include analyzing campaign performance, assisting with content creation, and contributing to marketing strategies. You will collaborate with cross-functional teams such as design, analytics, and product. Ideal candidates are pursuing a degree in marketing, business, or communications and possess strong analytical and creative skills. Experience with digital marketing tools is a plus. This internship offers exposure to large-scale, data-driven marketing operations.",
+      "responsibilities": [
+        "Analyze campaign performance",
+        "Assist with marketing content creation",
+        "Collaborate with cross-functional teams",
+        "Support marketing strategy execution"
+      ],
+      "requirements": [
+        "Student in marketing, business, or communications",
+        "Strong analytical skills",
+        "Creative mindset",
+        "Interest in digital marketing tools"
+      ]
     },
     {
+      "id": 3,
       "company_name": "Goldman Sachs",
       "position_name": "Operations Intern (Off-Cycle)",
+      "image": "/images/GoldmanSachs.png",
       "opening_date": "2026-02-01",
       "closing_date": "2026-05-31",
-      "description": "Off-cycle internship program for undergraduate students. Involves supporting operations, financial processes, and product lifecycle activities."
+      "description": "The Operations Internship at Goldman Sachs provides an opportunity to understand the backbone of financial services. You will assist with trade processing, client onboarding, and risk management activities. Responsibilities include monitoring transactions, identifying inefficiencies, and supporting process improvements. Candidates should demonstrate strong analytical thinking, attention to detail, and interest in finance. Students in finance, economics, or related fields are encouraged to apply. This role provides valuable exposure to global financial systems and professional development opportunities.",
+      "responsibilities": [
+        "Assist with trade processing",
+        "Support client onboarding",
+        "Monitor transactions",
+        "Identify process improvements"
+      ],
+      "requirements": [
+        "Student in finance or economics",
+        "Strong analytical thinking",
+        "Attention to detail",
+        "Interest in financial markets"
+      ]
     },
     {
+      "id": 4,
       "company_name": "Red Bull",
       "position_name": "Student Marketeer",
+      "image": "/images/redbull.png",
       "opening_date": "2026-03-01",
       "closing_date": "2026-06-01",
-      "description": "Campus-based brand ambassador role. Promote products, organize events, and engage with student communities."
+      "description": "As a Student Marketeer for Red Bull, you will represent the brand on campus and engage with student communities. Responsibilities include organizing promotional events, distributing products, and increasing brand awareness. You will gather feedback and contribute to local marketing strategies. This role is ideal for outgoing and energetic individuals with strong communication skills. Creativity and initiative are essential. You will gain experience in event marketing, brand promotion, and community engagement.",
+      "responsibilities": [
+        "Organize promotional events",
+        "Engage with students on campus",
+        "Increase brand awareness",
+        "Collect feedback and insights"
+      ],
+      "requirements": [
+        "Outgoing personality",
+        "Strong communication skills",
+        "Creative mindset",
+        "Ability to work independently"
+      ]
     },
     {
+      "id": 5,
       "company_name": "DLA Piper",
       "position_name": "Legal Intern",
+      "image": "/images/dlapiperluxembourg_logo.png",
       "opening_date": "2026-02-15",
       "closing_date": "2026-06-30",
-      "description": "6-month internship (July–December). Assist legal teams with research, documentation, and case preparation."
+      "description": "As a Legal Intern at DLA Piper, you will assist lawyers with legal research, document drafting, and case preparation. You will gain exposure to corporate law, regulatory compliance, and client advisory services. Responsibilities include reviewing legal documents, conducting research, and supporting ongoing cases. Candidates should be law students with strong analytical and research skills. Attention to detail and ability to work in a fast-paced environment are essential. This internship offers valuable insight into international legal practice.",
+      "responsibilities": [
+        "Conduct legal research",
+        "Draft and review documents",
+        "Assist case preparation",
+        "Support legal teams"
+      ],
+      "requirements": [
+        "Law student",
+        "Strong analytical skills",
+        "Attention to detail",
+        "Ability to work under pressure"
+      ]
     },
     {
+      "id": 6,
       "company_name": "UBS",
       "position_name": "Business Acceptance Intern",
+      "image": "/images/ubs.png",
       "opening_date": "2026-01-20",
       "closing_date": "2026-04-15",
-      "description": "Internship for students in law, compliance, or finance. Work on risk analysis, onboarding processes, and internal compliance checks."
+      "description": "The Business Acceptance Internship at UBS focuses on client onboarding and risk assessment processes. You will assist with reviewing client documentation, performing compliance checks, and supporting onboarding workflows. Responsibilities include analyzing risk profiles, ensuring regulatory compliance, and collaborating with internal teams. Ideal candidates are studying finance, law, or business. Strong analytical skills, attention to detail, and understanding of financial regulations are beneficial. This role offers experience in compliance and financial operations.",
+      "responsibilities": [
+        "Review client documentation",
+        "Perform compliance checks",
+        "Assist onboarding processes",
+        "Analyze risk data"
+      ],
+      "requirements": [
+        "Student in finance, law, or business",
+        "Attention to detail",
+        "Analytical mindset",
+        "Interest in compliance"
+      ]
     },
     {
+      "id": 7,
       "company_name": "Advanzia Bank",
       "position_name": "Digital Marketing Trainee",
+      "image": "/images/advanzia_bank.png",
       "opening_date": "2026-03-10",
       "closing_date": "2026-06-10",
-      "description": "Support digital campaigns, content creation, and product marketing. Requires student work authorization in Luxembourg."
+      "description": "As a Digital Marketing Trainee at Advanzia Bank, you will support online marketing initiatives and campaign execution. Responsibilities include content creation, social media management, and performance analysis. You will assist with SEO optimization, email marketing, and campaign reporting. Candidates should be creative, data-driven, and interested in digital marketing. Knowledge of marketing tools and analytics platforms is a plus. This role provides practical experience in digital marketing within the banking sector.",
+      "responsibilities": [
+        "Create marketing content",
+        "Manage social media",
+        "Analyze campaign performance",
+        "Support SEO initiatives"
+      ],
+      "requirements": [
+        "Interest in digital marketing",
+        "Creative thinking",
+        "Basic analytics knowledge",
+        "Strong communication skills"
+      ]
     },
     {
+      "id": 8,
       "company_name": "Lux-Airport",
       "position_name": "Student Job – InfoDesk Support",
+      "image": "/images/luxairport.png",
       "opening_date": "2026-04-01",
       "closing_date": "2026-05-15",
-      "description": "Assist passengers at the airport information desk. Provide guidance, answer queries, and support daily operations."
+      "description": "Work at Luxembourg Airport as an InfoDesk Support assistant and help passengers navigate airport services. Responsibilities include answering questions, providing directions, and assisting with general inquiries. You will support daily airport operations and ensure a positive passenger experience. Candidates should have strong communication skills, be friendly, and able to work in a fast-paced environment. Multilingual skills are an advantage. This role offers valuable customer service experience.",
+      "responsibilities": [
+        "Assist passengers with inquiries",
+        "Provide directions",
+        "Support airport operations",
+        "Ensure customer satisfaction"
+      ],
+      "requirements": [
+        "Strong communication skills",
+        "Friendly attitude",
+        "Ability to multitask",
+        "Multilingual is a plus"
+      ]
     },
     {
+      "id": 9,
       "company_name": "Paperjam",
       "position_name": "Event Programming Assistant Intern",
+      "image": "/images/paperjam.png",
       "opening_date": "2026-03-01",
       "closing_date": "2026-05-30",
-      "description": "6-month internship supporting event planning, coordination, and execution for business events in Luxembourg."
+      "description": "As an Event Programming Assistant Intern at Paperjam, you will support the planning and execution of business events. Responsibilities include coordinating schedules, managing logistics, and assisting with event promotion. You will work closely with the events team to ensure successful event delivery. Candidates should be organized, detail-oriented, and interested in event management. Strong communication skills are essential. This internship provides hands-on experience in event coordination and business networking.",
+      "responsibilities": [
+        "Coordinate event schedules",
+        "Manage logistics",
+        "Assist event promotion",
+        "Support execution of events"
+      ],
+      "requirements": [
+        "Organized and detail-oriented",
+        "Interest in events",
+        "Good communication skills",
+        "Team player"
+      ]
     },
     {
+      "id": 10,
       "company_name": "FANUC Europe Corporation",
       "position_name": "Working Student – HR & Change Management",
+      "image": "/images/fanuc.png",
       "opening_date": "2026-02-10",
       "closing_date": "2026-05-20",
-      "description": "Collaborate with HR teams on organizational initiatives, cross-functional projects, and internal communication strategies."
+      "description": "Join FANUC Europe as a Working Student in HR & Change Management and contribute to organizational initiatives. Responsibilities include supporting HR projects, assisting with internal communications, and participating in change management processes. You will collaborate with cross-functional teams and gain insight into HR strategies. Candidates should be studying human resources, business, or psychology. Strong organizational and communication skills are required. This role offers valuable experience in HR and organizational development.",
+      "responsibilities": [
+        "Support HR projects",
+        "Assist internal communication",
+        "Participate in change initiatives",
+        "Collaborate with teams"
+      ],
+      "requirements": [
+        "Student in HR or business",
+        "Strong organizational skills",
+        "Good communication",
+        "Interest in HR processes"
+      ]
     }
   ]
 }

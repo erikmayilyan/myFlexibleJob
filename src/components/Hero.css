@@ -25,6 +25,12 @@
   padding-right: 40px;
 }
 
+.hero-more {
+  background-color: rgb(214, 226, 226);
+  padding: 50px;
+  border-radius: 20px;
+}
+
 @media screen and (min-width: 640px) {
   .hero h1 {
     font-size: 3rem;
