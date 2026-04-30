@@ -4,3 +4,9 @@
   gap: 35px;
   padding-right: 20px;
 }
+
+.search-two {
+  margin: 0 auto;
+  background-color: rgb(214, 226, 226);
+  border-radius: 20px;
+}

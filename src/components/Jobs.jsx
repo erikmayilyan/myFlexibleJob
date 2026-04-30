@@ -4,6 +4,8 @@ import { useLocation } from 'react-router-dom';
 import jobsData from '../assets/jobs.json';
 import "./Jobs.css";
 import Card from './Card';
+import Search from './Search';
+import SearchTwo from './SearchTwo';
 
 const Jobs = () => {
   const location = useLocation();
@@ -16,6 +18,9 @@ const Jobs = () => {
 
   return (
     <div>
+      <div className='search-two'>
+        <SearchTwo />
+      </div>
       <h2>{query ? `Results for "${query}"` : `All Jobs`}</h2>
       <div className='jobs-container'>
         {filteredJobs.length > 0 ? (

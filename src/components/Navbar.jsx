@@ -29,7 +29,7 @@ const Navbar = ({theme, setTheme}) => {
           X
         </button>
         <a href="#" className='nav-tabs' onClick={closeMobileMenu}>Home</a>
-        <a href="#about" className='nav-tabs' onClick={closeMobileMenu}>About</a>
+        <a href="/about" className='nav-tabs' onClick={closeMobileMenu}>About</a>
         <a href="#jobs" className='nav-tabs' onClick={closeMobileMenu}>Jobs</a>
         <a href="#log-in" className='mobile-login' onClick={closeMobileMenu}>
           Log In
