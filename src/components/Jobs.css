@@ -10,3 +10,10 @@
   background-color: rgb(214, 226, 226);
   border-radius: 20px;
 }
+
+.result-query {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

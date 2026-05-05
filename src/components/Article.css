@@ -1,0 +1,45 @@
+.article-one {
+  margin-top: 40px;
+}
+
+.article-title {
+  margin-bottom: 20px;
+}
+
+.article-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.article-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 16px;
+  margin-top: 20px;
+}
+
+.article-text {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 1100px) {
+  .article-body {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .article-image {
+    flex: 0 0 520px;
+    max-width: 520px;
+  }
+
+  .article-text {
+    flex: 1;
+  }
+}
+.article-one p {
+  font-size: 20px;
+}

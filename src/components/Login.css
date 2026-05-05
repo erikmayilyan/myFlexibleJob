@@ -1,0 +1,46 @@
+.auth-container {
+  display: flex;
+  padding-top: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  background-color: rgb(214, 226, 226);
+  min-height: 150px;
+  padding-bottom: 20px;
+}
+
+.auth-card {
+  width: min(520px, calc(100% - 32px));
+  padding: 24px;
+  border-radius: 16px;
+  background: white;
+}
+
+.login-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.login-input {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.role-select {
+  margin-top: 10px;
+}
+
+.role-select label {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.toggle-text {
+  cursor: pointer;
+}
+
+.auth-error {
+  margin-top: 10px;
+  color: #b00020;
+}

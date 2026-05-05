@@ -1,9 +1,12 @@
+import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import jobsData from '../assets/jobs.json';
+import Submit from './Submit';
 import './JobDetails.css';
 
 const JobDetails = () => {
   const { id } = useParams();
+  const [openModal, setOpenModal] = useState(false);
   const job = jobsData.jobs.find(j => j.id === Number(id));
   if (!job) {
     return <p>Job Not Found</p>;
@@ -33,9 +36,10 @@ const JobDetails = () => {
           </ul>
           <p>Opening Date: {job.opening_date}</p>
           <p>Closing Date: {job.closing_date}</p>
-          <button>Apply Now</button>
+          <button onClick={() => setOpenModal(true)}>Apply Now</button>
         </div>
       </div>
+      <Submit isOpen={openModal} onClose={() => setOpenModal(false)}/>
     </div>
   )
 }

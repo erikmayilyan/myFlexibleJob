@@ -21,7 +21,7 @@ const Jobs = () => {
       <div className='search-two'>
         <SearchTwo />
       </div>
-      <h2>{query ? `Results for "${query}"` : `All Jobs`}</h2>
+      <h2 className='result-query'>{query ? `Results for "${query}"` : `All Jobs`}</h2>
       <div className='jobs-container'>
         {filteredJobs.length > 0 ? (
           filteredJobs.map((job, index) => (

@@ -5,8 +5,8 @@
   padding-top: 80px;
   padding-bottom: 80px;
   padding-left: 16px;
+  padding-right: 16px;
   text-align: center;
-  width: 100%;
   overflow: hidden;
   color: black;
 }
@@ -31,6 +31,38 @@
   border-radius: 20px;
 }
 
+.hero-about {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  background-color: rgb(214, 226, 226);
+  padding-bottom: 50px;
+}
+
+.hero-about h1 {
+  font-size: 300%;
+}
+
+.hero-about p {
+  font-size: 130%;
+  margin-bottom: 50px;
+}
+
+.hero-about a {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid white;
+}
+
+.hero-about a:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
 @media screen and (min-width: 640px) {
   .hero h1 {
     font-size: 48px;
@@ -51,6 +83,10 @@
 }
 
 @media screen and (max-width: 450px) {
+  .hero-more .find-jobs {
+    width: 100%;
+  }
+
   .hero-more h2 {
     font-size: 20.8px;
     padding-right: 40px;
