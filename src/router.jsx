@@ -8,7 +8,7 @@ import Article from "./components/Article";
 import Articles from "./components/Articles";
 import Footer from "./components/Footer";
 import Login from "./components/Login";
-import BusinessDashboard from "./components/BusinessDashboard";
+import DashboardRoute from "./components/DashboardRoute";
 import EditJob from "./components/EditJob";
 
 const getStoredUser = () => {
@@ -18,6 +18,17 @@ const getStoredUser = () => {
   } catch {
     return null;
   }
+};
+
+const ProtectedBusinessRoute = ({ children }) => {
+  const user = getStoredUser();
+  if (!user) {
+    return <Navigate to="/login" replace />;
+  }
+  if (user.role !== 'business') {
+    return <Navigate to="/dashboard" replace />;
+  }
+  return children;
 };
 
 const Router = () => {
@@ -33,17 +44,15 @@ const Router = () => {
         <Route path="/article/:id" element={<Article />} />
         <Route path="/articles" element={<Articles />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/dashboard" element={<DashboardRoute />} />
         <Route
-          path="/dashboard"
+          path="/dashboard/edit/:id"
           element={
-            getStoredUser() ? (
-              <BusinessDashboard />
-            ) : (
-              <Navigate to="/login" replace state={{ from: "/dashboard" }} />
-            )
+            <ProtectedBusinessRoute>
+              <EditJob />
+            </ProtectedBusinessRoute>
           }
         />
-        <Route path="/dashboard/edit/:id" element={<EditJob />} />
       </Routes>
       <Footer />
     </BrowserRouter>

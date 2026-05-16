@@ -1,26 +1,71 @@
 .submit-job {
-  width: 400px;
-  margin: 40px auto;
+  width: 100%;
+  max-width: 560px;
+  min-width: 0;
+  margin: 0;
 }
 
-form {
+.submit-job form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
+  width: 100%;
 }
 
-input,
-textarea,
-button {
-  padding: 10px;
-  font-size: 14px;
+.submit-job input,
+.submit-job textarea,
+.submit-job button {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-family: inherit;
 }
 
-textarea {
-  min-height: 80px;
+.submit-job label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #3d3f43;
+  margin-bottom: -4px;
+}
+
+.submit-job textarea {
+  min-height: 100px;
   resize: vertical;
 }
 
-button {
+.submit-job button[type="submit"] {
+  margin-top: 4px;
+  border: none;
+  background: #000000;
+  color: #ffffff;
+  font-weight: 600;
   cursor: pointer;
+  max-width: 200px;
+}
+
+.submit-job-dates {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.submit-job-dates > div {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+}
+
+@media (max-width: 520px) {
+  .submit-job-dates {
+    grid-template-columns: 1fr;
+  }
+
+  .submit-job button[type="submit"] {
+    max-width: none;
+    width: 100%;
+  }
 }

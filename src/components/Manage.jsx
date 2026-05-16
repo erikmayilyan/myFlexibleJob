@@ -19,6 +19,11 @@ const Manage = () => {
     console.log("Delete", id);
   };
 
+  const handleList = (id) => {
+    console.log("List", id);
+    navigate(`/dashboard/list/${id}`);
+  };
+
   return (
     <div className="manage">
       {amazonJobs.map((job) => (
@@ -31,24 +36,20 @@ const Manage = () => {
               src={job.image}
               alt={job.company_name}
             />
-
             <div>
               <h2 className="manage-position">
                 {job.position_name}
               </h2>
-
               <p>
                 {job.company_name}
               </p>
             </div>
           </div>
-
           <p className="manage-desc">
             {job.description.length > 100
               ? `${job.description.slice(0, 100)}...`
               : job.description}
           </p>
-
           <div className="manage-management">
             <button
               onClick={() => handleEdit(job.id)}
@@ -56,7 +57,12 @@ const Manage = () => {
             >
               Edit
             </button>
-
+            <button
+              onClick={() => handleList(job.id)}
+              className="manage-list"
+            >
+              List of Applicants
+            </button>
             <button
               onClick={() => handleDelete(job.id)}
               className="manage-delete"

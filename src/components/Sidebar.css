@@ -4,6 +4,7 @@
   border: 1px solid #000000;
   border-radius: 10px;
   padding: 16px;
+  min-width: 0;
 }
 
 .business-sidebar-header {
@@ -27,6 +28,7 @@
 
 .business-sidebar-link {
   display: block;
+  width: 100%;
   padding: 10px 12px;
   border: none;
   border-radius: 8px;
@@ -38,6 +40,7 @@
   text-align: left;
   text-decoration: none;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .business-sidebar-link:hover {
@@ -61,4 +64,55 @@
 
 .business-sidebar-link-placeholder:hover {
   background: transparent;
+}
+
+@media (max-width: 900px) {
+  .business-sidebar {
+    padding: 14px;
+  }
+
+  .business-sidebar-header {
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+  }
+
+  .business-sidebar-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .business-sidebar-link {
+    flex: 1 1 auto;
+    min-width: min(100%, 160px);
+    text-align: center;
+    padding: 12px 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .business-sidebar {
+    padding: 12px;
+    border-radius: 8px;
+  }
+
+  .business-sidebar-nav {
+    flex-direction: column;
+  }
+
+  .business-sidebar-link {
+    min-width: 0;
+    width: 100%;
+    text-align: left;
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .business-sidebar {
+    width: min(100%, 260px);
+    max-width: 260px;
+    margin: 0 auto;
+  }
 }

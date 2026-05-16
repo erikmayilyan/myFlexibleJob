@@ -82,7 +82,7 @@ const Navbar = ({theme, setTheme}) => {
           </div>
           {isDropdownOpen && (
             <div className='dropdown-menu'>
-              {user?.role === 'business' && (
+              {(user?.role === 'business' || user?.role === 'student') && (
                 <a href="/dashboard" onClick={() => setIsDropdownOpen(false)}>
                   Profile
                 </a>

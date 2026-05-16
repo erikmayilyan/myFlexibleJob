@@ -60,21 +60,28 @@ const SubmitJob = () => {
           value={jobData.image}
           onChange={handleChange}
         />
-        <label>Opening Date</label>
-        <input
-          type="date"
-          name="opening_date"
-          value={jobData.opening_date}
-          onChange={handleChange}
-        />
-
-        <label>Closing Date</label>
-        <input
-          type="date"
-          name="closing_date"
-          value={jobData.closing_date}
-          onChange={handleChange}
-        />
+        <div className="submit-job-dates">
+          <div>
+            <label htmlFor="opening_date">Opening Date</label>
+            <input
+              id="opening_date"
+              type="date"
+              name="opening_date"
+              value={jobData.opening_date}
+              onChange={handleChange}
+            />
+          </div>
+          <div>
+            <label htmlFor="closing_date">Closing Date</label>
+            <input
+              id="closing_date"
+              type="date"
+              name="closing_date"
+              value={jobData.closing_date}
+              onChange={handleChange}
+            />
+          </div>
+        </div>
         <textarea
           name="description"
           placeholder="Job Description"

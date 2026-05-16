@@ -1,6 +1,11 @@
+.edit-profile {
+  width: 100%;
+  min-width: 0;
+}
+
 .edit-profile-title {
   margin: 0 0 16px 0;
-  font-size: 1.25rem;
+  font-size: clamp(1.1rem, 2.5vw, 1.25rem);
   font-weight: 700;
   color: #3d3f43;
 }
@@ -16,12 +21,14 @@
 .edit-profile-form {
   display: grid;
   gap: 12px;
+  width: 100%;
   max-width: 520px;
 }
 
 .edit-profile-row {
   display: grid;
   gap: 6px;
+  min-width: 0;
 }
 
 .edit-profile-label {
@@ -31,11 +38,13 @@
 }
 
 .edit-profile-input {
+  width: 100%;
   padding: 10px 12px;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 10px;
-  font-size: 0.95rem;
+  font-size: 16px;
   font-weight: 500;
+  box-sizing: border-box;
 }
 
 .edit-profile-input:disabled {
@@ -48,11 +57,13 @@
 }
 
 .edit-profile-save {
+  width: 100%;
+  max-width: 280px;
   border: none;
   border-radius: 12px;
   background: #000000;
   color: #ffffff;
-  padding: 10px 14px;
+  padding: 12px 14px;
   font-size: 0.95rem;
   font-weight: 600;
 }
@@ -60,4 +71,14 @@
 .edit-profile-save:disabled {
   opacity: 0.6;
   cursor: not-allowed;
+}
+
+@media (max-width: 480px) {
+  .edit-profile-form {
+    max-width: none;
+  }
+
+  .edit-profile-save {
+    max-width: none;
+  }
 }
