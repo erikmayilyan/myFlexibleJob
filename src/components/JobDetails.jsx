@@ -1,16 +1,45 @@
-import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import jobsData from '../assets/jobs.json';
 import Submit from './Submit';
 import './JobDetails.css';
 
+const getStoredUser = () => {
+  try {
+    const raw = localStorage.getItem('authUser');
+    return raw ? JSON.parse(raw) : null;
+  } catch {
+    return null;
+  }
+};
+
 const JobDetails = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
+  const location = useLocation();
   const [openModal, setOpenModal] = useState(false);
   const job = jobsData.jobs.find(j => j.id === Number(id));
+
+  useEffect(() => {
+    if (location.state?.openApply) {
+      setOpenModal(true);
+      navigate(location.pathname, { replace: true, state: {} });
+    }
+  }, [location.state, location.pathname, navigate]);
+
+  const handleApplyNow = () => {
+    if (getStoredUser()) {
+      setOpenModal(true);
+      return;
+    }
+    navigate('/login', {
+      state: { from: `/jobs/${id}`, openApplyOnReturn: true },
+    });
+  };
+
   if (!job) {
     return <p>Job Not Found</p>;
-  };
+  }
 
   return (
     <div className='job-details'>
@@ -36,7 +65,7 @@ const JobDetails = () => {
           </ul>
           <p>Opening Date: {job.opening_date}</p>
           <p>Closing Date: {job.closing_date}</p>
-          <button onClick={() => setOpenModal(true)}>Apply Now</button>
+          <button type="button" onClick={handleApplyNow}>Apply Now</button>
         </div>
       </div>
       <Submit isOpen={openModal} onClose={() => setOpenModal(false)}/>

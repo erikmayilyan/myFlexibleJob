@@ -2,11 +2,32 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Card.css';
 
+const getStoredUser = () => {
+  try {
+    const raw = localStorage.getItem('authUser');
+    return raw ? JSON.parse(raw) : null;
+  } catch {
+    return null;
+  }
+};
+
 const Card = ({ job }) => {
   const navigate = useNavigate();
 
   const formatDate = (date) => {
     return new Date(date).toLocaleDateString();
+  };
+
+  const handleApplyClick = (event) => {
+    event.stopPropagation();
+    const jobPath = `/jobs/${job.id}`;
+    if (getStoredUser()) {
+      navigate(jobPath, { state: { openApply: true } });
+      return;
+    }
+    navigate('/login', {
+      state: { from: jobPath, openApplyOnReturn: true },
+    });
   };
 
   return (
@@ -31,7 +52,7 @@ const Card = ({ job }) => {
         </p>
         <p className='open-close'>Opening Date: {formatDate(job.opening_date)}</p>
         <p className='open-close'>Closing Date: {formatDate(job.closing_date)}</p>
-        <button>APPLY NOW</button>
+        <button type="button" onClick={handleApplyClick}>APPLY NOW</button>
       </div>
     </div>
   )

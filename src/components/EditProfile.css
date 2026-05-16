@@ -1,0 +1,63 @@
+.edit-profile-title {
+  margin: 0 0 16px 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #3d3f43;
+}
+
+.edit-profile-empty {
+  padding: 12px;
+  border: 1px dashed rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  color: rgba(61, 63, 67, 0.75);
+  font-weight: 500;
+}
+
+.edit-profile-form {
+  display: grid;
+  gap: 12px;
+  max-width: 520px;
+}
+
+.edit-profile-row {
+  display: grid;
+  gap: 6px;
+}
+
+.edit-profile-label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #3d3f43;
+}
+
+.edit-profile-input {
+  padding: 10px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.edit-profile-input:disabled {
+  background: #f4f4f4;
+  color: rgba(61, 63, 67, 0.75);
+}
+
+.edit-profile-actions {
+  margin-top: 8px;
+}
+
+.edit-profile-save {
+  border: none;
+  border-radius: 12px;
+  background: #000000;
+  color: #ffffff;
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.edit-profile-save:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

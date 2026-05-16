@@ -209,6 +209,90 @@
         "Good communication",
         "Interest in HR processes"
       ]
+    },
+    {
+      "id": 11,
+      "company_name": "Amazon Media EU S.à r.l.",
+      "position_name": "Software Development Engineer Intern",
+      "image": "/images/amazon.png",
+      "opening_date": "2026-04-15",
+      "closing_date": "2026-07-30",
+      "description": "Join Amazon as a Software Development Engineer Intern and contribute to scalable applications used by millions of customers. You will work with experienced engineers on backend services, APIs, and cloud-based systems. Responsibilities include writing clean code, debugging applications, participating in code reviews, and collaborating with agile teams. Candidates should have knowledge of Java, Python, or JavaScript and a passion for problem-solving.",
+      "responsibilities": [
+        "Develop scalable software solutions",
+        "Participate in code reviews",
+        "Debug and test applications",
+        "Collaborate with engineering teams"
+      ],
+      "requirements": [
+        "Student in computer science or related field",
+        "Knowledge of Java, Python, or JavaScript",
+        "Problem-solving mindset",
+        "Understanding of software development principles"
+      ]
+    },
+    {
+      "id": 12,
+      "company_name": "Amazon Media EU S.à r.l.",
+      "position_name": "Data Analyst Intern",
+      "image": "/images/amazon.png",
+      "opening_date": "2026-03-20",
+      "closing_date": "2026-06-25",
+      "description": "As a Data Analyst Intern at Amazon, you will support business teams by analyzing operational and customer data. You will create dashboards, generate reports, and identify trends that help improve decision-making. Candidates should be comfortable working with Excel, SQL, and data visualization tools. This role provides exposure to large-scale data systems and analytics workflows.",
+      "responsibilities": [
+        "Analyze business and customer data",
+        "Create dashboards and reports",
+        "Identify trends and insights",
+        "Support data-driven decisions"
+      ],
+      "requirements": [
+        "Student in data analytics, business, or IT",
+        "Knowledge of SQL and Excel",
+        "Analytical thinking",
+        "Attention to detail"
+      ]
+    },
+    {
+      "id": 13,
+      "company_name": "Amazon Media EU S.à r.l.",
+      "position_name": "UX/UI Design Intern",
+      "image": "/images/amazon.png",
+      "opening_date": "2026-05-01",
+      "closing_date": "2026-08-01",
+      "description": "The UX/UI Design Internship at Amazon offers an opportunity to design intuitive digital experiences for internal and customer-facing products. You will assist with wireframes, prototypes, and user research while collaborating with developers and product managers. Ideal candidates are creative, user-focused, and familiar with design tools such as Figma or Adobe XD.",
+      "responsibilities": [
+        "Design wireframes and prototypes",
+        "Conduct user research",
+        "Collaborate with product teams",
+        "Improve user experiences"
+      ],
+      "requirements": [
+        "Student in design or related field",
+        "Knowledge of Figma or Adobe XD",
+        "Creative mindset",
+        "Understanding of UX principles"
+      ]
+    },
+    {
+      "id": 14,
+      "company_name": "Amazon Media EU S.à r.l.",
+      "position_name": "Cloud Support Associate Intern",
+      "image": "/images/amazon.png",
+      "opening_date": "2026-02-28",
+      "closing_date": "2026-06-10",
+      "description": "Work with Amazon Web Services teams to support cloud infrastructure and customer technical inquiries. Responsibilities include troubleshooting cloud services, documenting technical solutions, and assisting engineers with operational tasks. Candidates should have an interest in cloud computing, networking, and Linux systems.",
+      "responsibilities": [
+        "Support AWS cloud services",
+        "Troubleshoot technical issues",
+        "Document support solutions",
+        "Assist cloud engineering teams"
+      ],
+      "requirements": [
+        "Student in IT or computer science",
+        "Interest in cloud computing",
+        "Basic Linux knowledge",
+        "Strong communication skills"
+      ]
     }
   ]
 }

@@ -82,9 +82,11 @@ const Navbar = ({theme, setTheme}) => {
           </div>
           {isDropdownOpen && (
             <div className='dropdown-menu'>
-              <a href="#" onClick={() => setIsDropdownOpen(false)}>
-                Profile
-              </a>
+              {user?.role === 'business' && (
+                <a href="/dashboard" onClick={() => setIsDropdownOpen(false)}>
+                  Profile
+                </a>
+              )}
               <button type='button' className='dropdown-logout' onClick={handleLogout}>
                 Log Out
               </button>

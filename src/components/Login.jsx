@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import users from "../assets/users.json";
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import './Login.css';
 
 const Login = () => {
@@ -11,6 +11,17 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const [name, setName] = useState('');
   const navigate = useNavigate();
+  const location = useLocation();
+
+  const getPostLoginNavigation = () => {
+    const { from, openApplyOnReturn } = location.state || {};
+    const path =
+      typeof from === 'string' && from.startsWith('/') ? from : '/';
+    return {
+      path,
+      state: openApplyOnReturn ? { openApply: true } : undefined,
+    };
+  };
 
   const handleLogin = (email, password) => {
     const user = users.users.find(
@@ -30,7 +41,8 @@ const Login = () => {
     };
 
     localStorage.setItem("authUser", JSON.stringify(sessionUser));
-    navigate("/");
+    const { path, state } = getPostLoginNavigation();
+    navigate(path, state ? { state } : {});
   };
 
   const handleSubmit = (event) => {

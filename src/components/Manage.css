@@ -1,0 +1,59 @@
+.manage {
+  display: grid;
+  gap: 20px;
+}
+
+.manage-jobs {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.manage-job {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.manage-job img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.manage-position {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+.manage-desc {
+  margin-bottom: 20px;
+}
+
+.manage-management {
+  display: flex;
+  gap: 8px;
+}
+
+.manage-edit {
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+
+.manage-delete {
+  background-color: #e80303;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}

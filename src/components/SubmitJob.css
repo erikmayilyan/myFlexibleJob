@@ -1,0 +1,26 @@
+.submit-job {
+  width: 400px;
+  margin: 40px auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+textarea,
+button {
+  padding: 10px;
+  font-size: 14px;
+}
+
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+button {
+  cursor: pointer;
+}
