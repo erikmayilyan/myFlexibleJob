@@ -21,7 +21,7 @@
 
 .business-dashboard > h1 {
   margin: 0 0 16px;
-  font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+  font-size: clamp(22px, 2.5vw, 28px);
   line-height: 1.2;
   color: #3d3f43;
 }
@@ -29,14 +29,14 @@
 .business-dashboard-message {
   margin-top: 0;
   min-width: 0;
-  font-size: 1.05rem;
+  font-size: 17px;
   font-weight: 500;
   color: #3d3f43;
 }
 
 .business-dashboard-placeholder {
   margin-top: 0;
-  font-size: 0.95rem;
+  font-size: 15px;
   font-weight: 500;
   line-height: 1.5;
   color: rgba(61, 63, 67, 0.65);

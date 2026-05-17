@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import users from "../assets/users.json";
+import { getUsers } from '../utils/users';
 import { useLocation, useNavigate } from 'react-router-dom';
 import './Login.css';
 
@@ -24,8 +24,8 @@ const Login = () => {
   };
 
   const handleLogin = (email, password) => {
-    const user = users.users.find(
-      (user) => user.email === email && user.password === password
+    const user = getUsers().find(
+      (u) => u.email === email && u.password === password
     );
 
     if (!user) {
@@ -42,7 +42,10 @@ const Login = () => {
 
     localStorage.setItem("authUser", JSON.stringify(sessionUser));
     const { path, state } = getPostLoginNavigation();
-    navigate(path, state ? { state } : {});
+    const defaultPath = user.role === 'admin' ? '/dashboard' : '/';
+    const destination =
+      path === '/' && user.role === 'admin' ? defaultPath : path;
+    navigate(destination, state ? { state } : {});
   };
 
   const handleSubmit = (event) => {

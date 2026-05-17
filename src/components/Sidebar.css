@@ -15,7 +15,7 @@
 
 .business-sidebar-title {
   display: block;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 600;
   color: #3d3f43;
 }
@@ -35,7 +35,7 @@
   background: transparent;
   color: #3d3f43;
   font-family: inherit;
-  font-size: 0.95rem;
+  font-size: 15px;
   font-weight: 500;
   text-align: left;
   text-decoration: none;
@@ -105,7 +105,7 @@
     width: 100%;
     text-align: left;
     padding: 12px;
-    font-size: 0.9rem;
+    font-size: 14px;
   }
 }
 

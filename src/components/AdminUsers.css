@@ -1,0 +1,79 @@
+.admin-users {
+  width: 100%;
+}
+
+.admin-users-title {
+  margin: 0 0 16px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #3d3f43;
+}
+
+.admin-users-empty {
+  margin: 0;
+  color: rgba(61, 63, 67, 0.65);
+}
+
+.admin-users-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.admin-users-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 20px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.admin-users-info {
+  min-width: 0;
+}
+
+.admin-users-info h3 {
+  margin: 0 0 4px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.admin-users-info p {
+  margin: 0;
+  color: rgba(61, 63, 67, 0.75);
+}
+
+.admin-users-delete {
+  flex-shrink: 0;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #e80303;
+}
+
+.admin-users-delete:hover {
+  background-color: #c70202;
+}
+
+@media (max-width: 640px) {
+  .admin-users-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+  }
+
+  .admin-users-delete {
+    width: 100%;
+    text-align: center;
+  }
+}

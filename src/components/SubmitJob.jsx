@@ -25,7 +25,7 @@ const SubmitJob = () => {
 
     const formattedJob = {
       ...jobData,
-      responsibilites: jobData.responsibilities
+      responsibilities: jobData.responsibilities
         .split("\n")
         .filter((item) => item.trim() !== ""),
       requirements: jobData.requirements

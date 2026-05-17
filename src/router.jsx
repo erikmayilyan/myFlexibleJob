@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import Login from "./components/Login";
 import DashboardRoute from "./components/DashboardRoute";
 import EditJob from "./components/EditJob";
+import ScrollToTop from "./components/ScrollToTop";
 
 const getStoredUser = () => {
   try {
@@ -34,6 +35,7 @@ const ProtectedBusinessRoute = ({ children }) => {
 const Router = () => {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Hero />} />

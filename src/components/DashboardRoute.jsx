@@ -2,6 +2,7 @@ import React from 'react';
 import { Navigate } from 'react-router-dom';
 import BusinessDashboard from './BusinessDashboard';
 import StudentDashboard from './StudentDashboard';
+import AdminDashboard from './AdminDashboard';
 
 const getStoredUser = () => {
   try {
@@ -25,6 +26,10 @@ const DashboardRoute = () => {
 
   if (user.role === 'student') {
     return <StudentDashboard />;
+  }
+
+  if (user.role === 'admin') {
+    return <AdminDashboard />;
   }
 
   return <Navigate to="/" replace />;

@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import usersData from '../assets/users.json';
+import { getUsers } from '../utils/users';
 import './EditProfile.css';
 
 const EditProfile = () => {
@@ -12,8 +12,8 @@ const EditProfile = () => {
       }
 
       const match =
-        usersData.users.find((u) => u.id === sessionUser.id) ||
-        usersData.users.find((u) => u.email === sessionUser.email);
+        getUsers().find((u) => u.id === sessionUser.id) ||
+        getUsers().find((u) => u.email === sessionUser.email);
 
       return match || sessionUser;
     } catch {

@@ -7,7 +7,7 @@ const Footer = () => {
     <div className='footer'>
       <div>
         <img src={mainLogo} alt="" />
-        <p>Find your side hustle today and start building your carrer!</p>
+        <p>Find your side hustle today and start building your career!</p>
         <ul className='footer-nav'>
           <li><a href='/'>Home</a></li>
           <li><a href='/about'>About</a></li>

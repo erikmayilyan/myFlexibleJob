@@ -33,7 +33,7 @@
 
 .manage-position {
   margin: 0;
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  font-size: clamp(16px, 2.5vw, 20px);
   line-height: 1.35;
   font-weight: 600;
   word-wrap: break-word;
@@ -63,7 +63,7 @@
   color: white;
   padding: 10px 20px;
   border-radius: 10px;
-  font-size: 0.9rem;
+  font-size: 14px;
   font-weight: 600;
   cursor: pointer;
 }

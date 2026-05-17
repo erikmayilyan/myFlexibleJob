@@ -1,0 +1,68 @@
+.admin-add-article {
+  width: 100%;
+}
+
+.admin-add-article-title {
+  margin: 0 0 16px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #3d3f43;
+}
+
+.admin-add-article-form {
+  display: grid;
+  gap: 12px;
+  max-width: 640px;
+}
+
+.admin-add-article-row {
+  display: grid;
+  gap: 6px;
+}
+
+.admin-add-article-label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #3d3f43;
+}
+
+.admin-add-article-input,
+.admin-add-article-textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.admin-add-article-textarea {
+  resize: vertical;
+  min-height: 160px;
+}
+
+.admin-add-article-actions {
+  margin-top: 4px;
+}
+
+.admin-add-article-submit {
+  border: none;
+  border-radius: 12px;
+  background: #000000;
+  color: #ffffff;
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.admin-add-article-submit:hover {
+  background: #222222;
+}
+
+.admin-add-article-message {
+  margin: 12px 0 0;
+  color: #3d3f43;
+  font-weight: 500;
+}

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import mainLogo from '../../public/primaryLogo.png';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import "./Navbar.css";
 
 const Navbar = ({theme, setTheme}) => {
@@ -8,6 +8,7 @@ const Navbar = ({theme, setTheme}) => {
   const [user, setUser] = useState(null);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
 
   const closeMobileMenu = () => setIsMobileMenuOpen(false);
 
@@ -28,7 +29,9 @@ const Navbar = ({theme, setTheme}) => {
   const handleLogout = () => {
     localStorage.removeItem("authUser");
     setUser(null);
+    setIsDropdownOpen(false);
     closeMobileMenu();
+    navigate('/', { replace: true });
   };
 
   return (
@@ -82,7 +85,7 @@ const Navbar = ({theme, setTheme}) => {
           </div>
           {isDropdownOpen && (
             <div className='dropdown-menu'>
-              {(user?.role === 'business' || user?.role === 'student') && (
+              {(user?.role === 'business' || user?.role === 'student' || user?.role === 'admin') && (
                 <a href="/dashboard" onClick={() => setIsDropdownOpen(false)}>
                   Profile
                 </a>
